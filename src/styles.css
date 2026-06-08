@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:root {
+  /* Light Mode (Default) Variables */
+  --bg-color: #f8f9fa;
+  --text-color: #1a1a1a;
+  --text-secondary: #5f6368;
+  --navbar-bg: rgba(255, 255, 255, 0.85);
+  --navbar-border: rgba(0, 0, 0, 0.08);
+  --accent-color: #ff3344;
+  --active-bg: rgba(255, 51, 68, 0.08);
+  --hover-bg: rgba(0, 0, 0, 0.04);
+  --shadow-color: rgba(0, 0, 0, 0.06);
+  --logo-color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Mode Variables */
+    --bg-color: #0b0c10;
+    --text-color: #f8f9fa;
+    --text-secondary: #8f9296;
+    --navbar-bg: rgba(18, 18, 18, 0.75);
+    --navbar-border: rgba(255, 255, 255, 0.08);
+    --accent-color: #ff3344;
+    --active-bg: rgba(255, 51, 68, 0.12);
+    --hover-bg: rgba(255, 255, 255, 0.05);
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --logo-color: #ffffff;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

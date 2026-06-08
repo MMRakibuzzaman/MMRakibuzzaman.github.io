@@ -1,0 +1,98 @@
+.navbar-container {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--navbar-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--navbar-border);
+  border-radius: 9999px;
+  padding: 8px 24px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--logo-color);
+  letter-spacing: -0.5px;
+  font-family: system-ui, -apple-system, sans-serif;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.logo .dot {
+  color: var(--accent-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Base style overrides for material button in nav */
+.nav-links button, .nav-links a {
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  border-radius: 9999px !important;
+  padding: 6px 16px !important;
+  min-width: unset !important;
+  line-height: unset !important;
+  border: 1px solid transparent !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.nav-links button:hover, .nav-links a:hover {
+  color: var(--logo-color) !important;
+  background-color: var(--hover-bg) !important;
+}
+
+/* Active State: capsule style red border/bg as shown in the screenshot */
+.nav-links button.active {
+  color: var(--logo-color) !important;
+  background-color: var(--active-bg) !important;
+  border: 1px solid var(--accent-color) !important;
+}
+
+/* Resume Button in Red */
+.nav-links .resume-btn {
+  color: var(--accent-color) !important;
+  font-weight: 600 !important;
+}
+
+.nav-links .resume-btn:hover {
+  background-color: var(--active-bg) !important;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .navbar-content {
+    padding: 6px 12px;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .nav-links {
+    gap: 4px;
+  }
+  .nav-links button, .nav-links a {
+    font-size: 0.8rem !important;
+    padding: 4px 10px !important;
+  }
+}
