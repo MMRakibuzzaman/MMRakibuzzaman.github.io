@@ -25,6 +25,13 @@ export class Projects {
       url: 'https://github.com/MMRakibuzzaman/Cricket-Tournament-Manager'
     },
     {
+      category: '.NET API & ONNX Runtime',
+      title: 'ONNX Image Upscaler',
+      technologies: ['.NET Core API', 'Angular', 'ONNX Runtime', 'SkiaSharp', 'REST API', 'Image Processing'],
+      about: 'A proof-of-concept image upscaling service with a .NET backend and Angular frontend. The backend leverages ONNX Runtime and SkiaSharp to execute super-resolution models (Grayscale Sub-Pixel and Color RGB) via a REST API to dynamically process and upscale uploaded images.',
+      url: 'https://github.com/MMRakibuzzaman/ImageUpscaler_CoreApi_Angular'
+    },
+    {
       category: 'ASP.NET Web API 2',
       title: 'Cricket Player REST API',
       technologies: ['ASP.NET Web API 2', 'Entity Framework 6', 'View Models', 'JSON'],
