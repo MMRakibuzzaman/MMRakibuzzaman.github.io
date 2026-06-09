@@ -68,31 +68,25 @@
   letter-spacing: 0.5px;
 }
 
-.tech-buttons-container {
+.tech-pills-container {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
   margin-bottom: 24px;
   flex-wrap: wrap;
 }
 
-.tech-btn {
-  background-color: var(--hover-bg) !important;
-  color: var(--logo-color) !important;
-  border: 1px solid var(--navbar-border) !important;
-  font-weight: 500 !important;
-  font-size: 0.95rem !important;
-  padding: 8px 24px !important;
-  border-radius: 9999px !important;
-  line-height: 1.4 !important;
-  min-width: unset !important;
-  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease !important;
-}
-
-.tech-btn:hover {
-  border-color: rgba(0, 200, 83, 0.4) !important;
-  color: var(--accent-color) !important;
-  background-color: var(--active-bg) !important;
+.tech-pill {
+  background-color: var(--hover-bg);
+  color: var(--logo-color);
+  border: 1px solid var(--navbar-border);
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  line-height: 1.4;
+  user-select: none;
+  display: inline-block;
 }
 
 .subtitle-text {
@@ -214,14 +208,6 @@
     gap: 16px;
   }
   .connect-btn {
-    width: 100%;
-  }
-  .tech-buttons-container {
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
-  }
-  .tech-btn {
     width: 100%;
   }
 }
