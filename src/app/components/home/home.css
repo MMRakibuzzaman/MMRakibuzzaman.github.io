@@ -77,19 +77,22 @@
 }
 
 .tech-btn {
-  background-color: var(--accent-color) !important;
-  color: #ffffff !important;
-  font-weight: 600 !important;
-  font-size: 1rem !important;
-  padding: 12px 28px !important;
+  background-color: var(--hover-bg) !important;
+  color: var(--logo-color) !important;
+  border: 1px solid var(--navbar-border) !important;
+  font-weight: 500 !important;
+  font-size: 0.95rem !important;
+  padding: 8px 24px !important;
   border-radius: 9999px !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-  box-shadow: 0 4px 14px rgba(0, 200, 83, 0.4) !important;
+  line-height: 1.4 !important;
+  min-width: unset !important;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease !important;
 }
 
 .tech-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 200, 83, 0.6) !important;
+  border-color: rgba(0, 200, 83, 0.4) !important;
+  color: var(--accent-color) !important;
+  background-color: var(--active-bg) !important;
 }
 
 .subtitle-text {
