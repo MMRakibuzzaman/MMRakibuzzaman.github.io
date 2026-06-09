@@ -10,9 +10,19 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class Navbar implements AfterViewInit, OnDestroy {
   activeSection = signal('home');
+  isMenuOpen = signal(false);
   private observer: IntersectionObserver | null = null;
   private isClickScrolling = false;
   private clickTimeout: any = null;
+
+  toggleMenu() {
+    this.isMenuOpen.update(v => !v);
+  }
+
+  navigateTo(section: string) {
+    this.setActive(section);
+    this.isMenuOpen.set(false);
+  }
 
   setActive(section: string) {
     this.activeSection.set(section);

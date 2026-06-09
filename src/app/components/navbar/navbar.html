@@ -1,24 +1,31 @@
 <nav class="navbar-container">
-        <div class="navbar-content">
-                <div class="logo">
-                        Remon
+        <div class="navbar-content" [class.open]="isMenuOpen()">
+                <div class="navbar-header">
+                        <div class="logo">
+                                Remon
+                        </div>
+                        <button class="hamburger-btn" (click)="toggleMenu()" [class.open]="isMenuOpen()" aria-label="Toggle menu">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                        </button>
                 </div>
 
-                <div class="nav-links">
+                <div class="nav-links" [class.open]="isMenuOpen()">
                         <button mat-button [class.active]="activeSection() === 'home'"
-                                (click)="setActive('home')">Home</button>
+                                (click)="navigateTo('home')">Home</button>
 
                         <button mat-button [class.active]="activeSection() === 'projects'"
-                                (click)="setActive('projects')">Projects</button>
+                                (click)="navigateTo('projects')">Projects</button>
 
                         <button mat-button [class.active]="activeSection() === 'skills'"
-                                (click)="setActive('skills')">Skills</button>
+                                (click)="navigateTo('skills')">Skills</button>
 
                         <button mat-button [class.active]="activeSection() === 'about'"
-                                (click)="setActive('about')">About</button>
+                                (click)="navigateTo('about')">About</button>
 
                         <button mat-button [class.active]="activeSection() === 'contact'"
-                                (click)="setActive('contact')">Contact</button>
+                                (click)="navigateTo('contact')">Contact</button>
 
                         <!-- <a mat-button class="resume-btn" href="#" target="_blank">Resume</a> -->
                 </div>
