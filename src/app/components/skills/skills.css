@@ -54,7 +54,7 @@
 
 .skills-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(0, 200, 83, 0.25);
+  border-color: rgba(198, 40, 40, 0.3);
 }
 
 .card-header {
@@ -78,19 +78,11 @@
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 9999px;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, background-color 0.3s ease;
 }
 
 .skills-card:hover .decorator {
   width: 24px;
-}
-
-/* Custom coloring for Languages card (Highlighting in red to balance theme design) */
-.skills-card:nth-child(1):hover {
-  border-color: rgba(198, 40, 40, 0.3);
-}
-
-.skills-card:nth-child(1):hover .decorator {
   background-color: var(--red-accent);
 }
 
@@ -113,23 +105,12 @@
 }
 
 .skills-card:hover .skill-pill {
-  border-color: rgba(0, 200, 83, 0.15);
+  border-color: rgba(198, 40, 40, 0.2);
 }
 
 /* Hover effect on actual individual pills */
 .skill-pill:hover {
-  background-color: var(--active-bg);
-  border-color: var(--accent-color) !important;
-  color: var(--accent-color);
-}
-
-/* Red individual pill overrides for Languages card */
-.skills-card:nth-child(1) .skill-pill:hover {
   background-color: var(--red-active-bg);
   border-color: var(--red-accent) !important;
   color: var(--red-accent);
-}
-
-.skills-card:nth-child(1):hover .skill-pill {
-  border-color: rgba(198, 40, 40, 0.2);
 }

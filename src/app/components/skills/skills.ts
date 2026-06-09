@@ -36,7 +36,7 @@ export class Skills {
     },
     {
       title: 'Tools & Others',
-      skills: ['Entity Framework (EF Core & EF6)', 'Git', 'GitHub', 'AJAX', 'JSON']
+      skills: ['Entity Framework (EF Core & EF6)', 'Git', 'GitHub', 'AJAX', 'JSON','Linux']
     }
   ];
 }
