@@ -1,0 +1,192 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 24px 24px 24px;
+  box-sizing: border-box;
+}
+
+/* Subtle starry background simulation */
+.stars-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(circle at 20% 30%, var(--hover-bg) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 75% 15%, var(--hover-bg) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 50% 60%, var(--hover-bg) 2px, transparent 2px),
+    radial-gradient(circle at 15% 80%, var(--hover-bg) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 85% 75%, var(--hover-bg) 1.5px, transparent 1.5px);
+  background-size: 100% 100%;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greeting-text {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.name-text {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--logo-color);
+  margin: 0 0 20px 0;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.pill-container {
+  margin-bottom: 24px;
+}
+
+.role-pill {
+  background-color: var(--active-bg);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding: 6px 18px;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.subtitle-text {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0 0 40px 0;
+  max-width: 600px;
+  font-weight: 400;
+}
+
+.subtitle-text em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--logo-color);
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Connect button green background */
+.connect-btn {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  padding: 12px 28px !important;
+  border-radius: 9999px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  box-shadow: 0 4px 14px rgba(0, 200, 83, 0.4) !important;
+}
+
+.connect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 200, 83, 0.6) !important;
+}
+
+.connect-btn .arrow {
+  margin-left: 6px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.connect-btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Email Container */
+.email-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--hover-bg);
+  border: 1px solid var(--navbar-border);
+  padding: 8px 16px;
+  border-radius: 9999px;
+  transition: border-color 0.2s ease;
+}
+
+.email-container:hover {
+  border-color: rgba(0, 200, 83, 0.3);
+}
+
+.email-link {
+  color: var(--logo-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.email-link:hover {
+  color: var(--accent-color);
+}
+
+/* Copy Button Styling */
+.copy-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.copy-btn:hover {
+  color: var(--logo-color);
+  background-color: var(--hover-bg);
+}
+
+.copy-btn .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.copy-btn .success-icon {
+  color: var(--accent-color);
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .name-text {
+    font-size: 2.8rem;
+  }
+  .subtitle-text {
+    font-size: 1.2rem;
+  }
+  .action-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .connect-btn {
+    width: 100%;
+  }
+}
