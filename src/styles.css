@@ -10,6 +10,8 @@
   --navbar-border: rgba(0, 0, 0, 0.08);
   --accent-color: #00c853;
   --active-bg: rgba(0, 200, 83, 0.08);
+  --red-accent: #ff3344;
+  --red-active-bg: rgba(255, 51, 68, 0.08);
   --hover-bg: rgba(0, 0, 0, 0.04);
   --shadow-color: rgba(0, 0, 0, 0.06);
   --logo-color: #1a1a1a;
@@ -25,6 +27,8 @@
     --navbar-border: rgba(255, 255, 255, 0.08);
     --accent-color: #00c853;
     --active-bg: rgba(0, 200, 83, 0.12);
+    --red-accent: #ff3344;
+    --red-active-bg: rgba(255, 51, 68, 0.12);
     --hover-bg: rgba(255, 255, 255, 0.05);
     --shadow-color: rgba(0, 0, 0, 0.4);
     --logo-color: #ffffff;

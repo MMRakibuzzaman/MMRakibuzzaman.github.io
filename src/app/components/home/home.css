@@ -77,10 +77,10 @@
 }
 
 .tech-pill {
-  background-color: var(--hover-bg);
-  color: var(--logo-color);
-  border: 1px solid var(--navbar-border);
-  font-weight: 500;
+  background-color: var(--red-active-bg);
+  color: var(--red-accent);
+  border: 1px solid var(--red-accent);
+  font-weight: 600;
   font-size: 0.8rem;
   padding: 4px 12px;
   border-radius: 9999px;
