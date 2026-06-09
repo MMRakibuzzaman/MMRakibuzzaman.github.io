@@ -98,14 +98,15 @@
   display: block;
   width: 24px;
   height: 4px;
-  background-color: var(--red-accent);
+  background-color: var(--accent-color);
   border-radius: 9999px;
   margin-bottom: 32px;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, background-color 0.3s ease;
 }
 
 .details-card:hover .decorator {
   width: 36px;
+  background-color: var(--red-accent);
 }
 
 .info-grid {
