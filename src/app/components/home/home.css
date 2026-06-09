@@ -68,6 +68,30 @@
   letter-spacing: 0.5px;
 }
 
+.tech-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.tech-btn {
+  background-color: var(--accent-color) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  padding: 12px 28px !important;
+  border-radius: 9999px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  box-shadow: 0 4px 14px rgba(0, 200, 83, 0.4) !important;
+}
+
+.tech-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 200, 83, 0.6) !important;
+}
+
 .subtitle-text {
   font-size: 1.5rem;
   color: var(--text-secondary);
@@ -187,6 +211,14 @@
     gap: 16px;
   }
   .connect-btn {
+    width: 100%;
+  }
+  .tech-buttons-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  .tech-btn {
     width: 100%;
   }
 }

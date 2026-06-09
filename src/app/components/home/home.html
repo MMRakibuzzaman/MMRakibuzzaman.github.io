@@ -2,35 +2,43 @@
   <div class="stars-bg"></div>
   <div class="hero-content">
     <p class="greeting-text">Hey, I'm</p>
-    <h1 class="name-text">RAKIBUZZAMAN</h1>
-    
+    <h1 class="name-text">M. M. RAKIBUZZAMAN</h1>
+
     <div class="pill-container">
       <span class="role-pill">Full Stack Developer</span>
     </div>
-    
+
+    <div class="tech-buttons-container">
+      <button mat-flat-button class="tech-btn" (click)="scrollToSection('skills')">ASP.NET</button>
+      <button mat-flat-button class="tech-btn" (click)="scrollToSection('skills')">Angular</button>
+    </div>
+
     <p class="subtitle-text">
-      I build and craft digital experiences that deliver <em>real impact</em>
+      What I thought easy may not be that easy, but what I thought hard may or <em>may not be that hard.</em>
     </p>
-    
+
     <div class="action-buttons">
       <button mat-flat-button class="connect-btn" (click)="scrollToContact()">
-        Let's Connect <span class="arrow">→</span>
+        Email me <span class="arrow">→</span>
       </button>
-      
+
       <div class="email-container">
         <a [href]="'mailto:' + email" class="email-link">{{ email }}</a>
         <button class="copy-btn" (click)="copyEmail()" [attr.aria-label]="copyTooltip()" [title]="copyTooltip()">
           @if (isCopied()) {
-            <!-- Checkmark SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon success-icon">
-              <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
-            </svg>
+          <!-- Checkmark SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon success-icon">
+            <path fill-rule="evenodd"
+              d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+              clip-rule="evenodd" />
+          </svg>
           } @else {
-            <!-- Document/Copy SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon">
-              <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
-              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
-            </svg>
+          <!-- Document/Copy SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+          </svg>
           }
         </button>
       </div>

@@ -1,21 +1,21 @@
 <nav class="navbar-container">
         <div class="navbar-content">
                 <div class="logo">
-                        Rakibuzzaman
+                        Remon
                 </div>
 
                 <div class="nav-links">
                         <button mat-button [class.active]="activeSection() === 'home'"
                                 (click)="setActive('home')">Home</button>
 
-                        <button mat-button [class.active]="activeSection() === 'about'"
-                                (click)="setActive('about')">About</button>
-
                         <button mat-button [class.active]="activeSection() === 'projects'"
                                 (click)="setActive('projects')">Projects</button>
 
                         <button mat-button [class.active]="activeSection() === 'skills'"
                                 (click)="setActive('skills')">Skills</button>
+
+                        <button mat-button [class.active]="activeSection() === 'about'"
+                                (click)="setActive('about')">About</button>
 
                         <button mat-button [class.active]="activeSection() === 'contact'"
                                 (click)="setActive('contact')">Contact</button>

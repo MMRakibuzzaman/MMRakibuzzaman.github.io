@@ -24,10 +24,14 @@ export class Home {
     });
   }
 
-  scrollToContact() {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  scrollToContact() {
+    this.scrollToSection('contact');
   }
 }
