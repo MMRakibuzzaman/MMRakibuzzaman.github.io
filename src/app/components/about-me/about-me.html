@@ -4,30 +4,28 @@
       <h2 class="title">About Me</h2>
       <p class="subtitle">Personal details and background information.</p>
     </div>
-    
+
     <div class="about-grid">
       <!-- Profile Picture Container -->
       <div class="profile-card">
         <div class="profile-img-wrapper">
-          <img src="profile.png" 
-               alt="M. M. Rakibuzzaman" 
-               class="profile-img" 
-               onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=MM&backgroundColor=c62828&textColor=ffffff';">
+          <img src="profile.jpg" alt="M. M. Rakibuzzaman" class="profile-img"
+            onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=MM&backgroundColor=c62828&textColor=ffffff';">
         </div>
       </div>
-      
+
       <!-- Details Card -->
       <div class="details-card">
         <h3 class="details-title">Personal Information</h3>
         <span class="decorator"></span>
-        
+
         <div class="info-grid">
           @for (item of personalInfo; track item.label) {
-            <div class="info-row">
-              <span class="info-label">{{ item.label }}</span>
-              <span class="info-divider">:</span>
-              <span class="info-value">{{ item.value }}</span>
-            </div>
+          <div class="info-row">
+            <span class="info-label">{{ item.label }}</span>
+            <span class="info-divider">:</span>
+            <span class="info-value">{{ item.value }}</span>
+          </div>
           }
         </div>
       </div>

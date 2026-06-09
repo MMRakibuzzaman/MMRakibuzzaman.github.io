@@ -11,7 +11,6 @@ export class AboutMe {
   personalInfo = [
     { label: 'Name', value: 'M. M. Rakibuzzaman' },
     { label: "Father's Name", value: 'MD Moniruzzaman' },
-    { label: "Mother's Name", value: 'Razia Zaman' },
     { label: 'Date of Birth', value: '11/10/1999' },
     { label: 'Nationality', value: 'Bangladeshi' },
     { label: 'Religion', value: 'Islam' },
