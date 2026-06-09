@@ -42,3 +42,11 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+app-home,
+app-projects,
+app-skills,
+app-about-me,
+app-contact {
+  display: block;
+}
