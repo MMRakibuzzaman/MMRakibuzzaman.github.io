@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 export class Contact {
   name = 'M. M. RAKIBUZZAMAN';
   role = 'Full Stack Developer (.NET)';
-  phones = ['01888346061', '01716017357'];
+  phones = ['01888346061'];
   email = 'remon.narail@gmail.com';
   github = 'https://github.com/MMRakibuzzaman';
   linkedin = 'https://www.linkedin.com/in/m-m-rakibuzzaman-remon-6a9400349';

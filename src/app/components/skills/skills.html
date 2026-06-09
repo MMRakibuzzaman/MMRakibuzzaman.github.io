@@ -1,1 +1,25 @@
-<p>skills works!</p>
+<section class="skills-section" id="skills">
+  <div class="skills-container">
+    <div class="section-header">
+      <h2 class="title">Technical Expertise</h2>
+      <p class="subtitle">A summary of the languages, frameworks, databases, and architectural patterns I work with.</p>
+    </div>
+    
+    <div class="skills-grid">
+      @for (category of categories; track category.title) {
+        <div class="skills-card">
+          <div class="card-header">
+            <h3 class="category-title">{{ category.title }}</h3>
+            <span class="decorator"></span>
+          </div>
+          
+          <div class="skills-list">
+            @for (skill of category.skills; track skill) {
+              <span class="skill-pill">{{ skill }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
